@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'LabGrotesque';
+    src: url("./assets/fonts/LabGrotesque-Regular_.42b8ae8b.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'LabGrotesque';
+    src: url("./assets/fonts/LabGrotesque-Medium_.585ebf0b.woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'LabGrotesque';
+    src: url("./assets/fonts/LabGrotesque-Bold_.938f2472.woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'LabGrotesque';
+    src: url("./assets/fonts/LabGrotesque-Black_.4c4b4e8c.woff2");
+    font-weight: 800;
+}
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply bg-white text-gray;
+        font-family: 'LabGrotesque', sans-serif;
+    }
+
+    ::selection {
+        @apply bg-primary/20;
+    }
+}
